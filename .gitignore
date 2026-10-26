@@ -1,0 +1,11 @@
+# User data never belongs in this public distribution repository.
+Astral/
+.minecraft/
+launcher.json
+accounts.json
+*.log
+*.key
+.env
+.env.*
+*.pfx
+*.p12

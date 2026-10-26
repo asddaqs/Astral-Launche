@@ -1,0 +1,36 @@
+name: 错误反馈
+description: 报告启动、下载、界面或其他功能问题
+title: "[问题] "
+body:
+  - type: markdown
+    attributes:
+      value: 请勿上传账号配置、API 密钥、访问令牌或私人存档。
+  - type: input
+    id: version
+    attributes:
+      label: 启动器版本
+      placeholder: "例如 1.2.0"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Windows、游戏及加载器版本
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 期望结果和实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 截图或脱敏错误片段

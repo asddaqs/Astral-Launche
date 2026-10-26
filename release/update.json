@@ -1,0 +1,7 @@
+{
+  "version": "1.2.2",
+  "url": "https://github.com/asddaqs/Astral-Launche/releases/download/v1.2.2/AstralLauncher.exe",
+  "sha256": "140566f569b1e9f26660ecfcd3ff145df6cc8721871a48111419587e42337739",
+  "size": 8331264,
+  "releaseNotes": "轻量单 EXE，优先复用系统 WebView2；缺失时自动下载并验证微软签名后安装，可复用旧版完整便携内核。"
+}

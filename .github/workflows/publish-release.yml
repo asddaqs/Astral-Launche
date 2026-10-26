@@ -1,0 +1,51 @@
+name: Publish Astral Launcher
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out release files
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Verify release metadata and program
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, os
+          from pathlib import Path
+          payload = Path('release/AstralLauncher.exe')
+          manifest = json.loads(Path('release/update.json').read_text(encoding='utf-8-sig'))
+          tag = os.environ['RELEASE_TAG']
+          assert tag == 'v' + manifest['version'], 'Tag and version differ'
+          expected_url = f'https://github.com/{os.environ["GITHUB_REPOSITORY"]}/releases/download/{tag}/AstralLauncher.exe'
+          assert manifest['url'] == expected_url, 'Unexpected update URL'
+          assert payload.stat().st_size == manifest['size'], 'Incorrect executable size'
+          digest = hashlib.sha256(payload.read_bytes()).hexdigest()
+          assert digest == manifest['sha256'], 'Incorrect executable SHA256'
+          assert Path('release/AstralLauncher.exe.sha256').read_text().strip() == digest + '  AstralLauncher.exe', 'Incorrect checksum file'
+          print(f'Verified {tag}: {manifest["size"]} bytes, SHA256 {digest}')
+          PY
+      - name: Create and publish verified release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.ref_name }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh release create "$RELEASE_TAG" --verify-tag --draft --title "Astral Launcher ${RELEASE_TAG#v}" --notes-file release/RELEASE_NOTES.md release/AstralLauncher.exe release/AstralLauncher.exe.sha256 release/update.json
+          gh release edit "$RELEASE_TAG" --draft=false --latest
