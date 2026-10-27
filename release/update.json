@@ -1,7 +1,7 @@
 {
-  "version": "1.2.2",
-  "url": "https://github.com/asddaqs/Astral-Launche/releases/download/v1.2.2/AstralLauncher.exe",
-  "sha256": "140566f569b1e9f26660ecfcd3ff145df6cc8721871a48111419587e42337739",
-  "size": 8331264,
-  "releaseNotes": "轻量单 EXE，优先复用系统 WebView2；缺失时自动下载并验证微软签名后安装，可复用旧版完整便携内核。"
+  "version": "1.4.2",
+  "url": "https://github.com/asddaqs/Astral-Launche/releases/download/v1.4.2/AstralLauncher.exe",
+  "sha256": "d6289270f7e1a0d6a86fca33b96e46696bb4a1e1b2e2b1055f4bb807163695e0",
+  "size": 8475136,
+  "releaseNotes": "新增 EasyTier 六位房间号联机、免费社区节点与自定义节点；模组批量更新、服务器收藏、截图相册和磁盘管理；圆形/方块地球切换及 Windows 原生平滑圆角。"
 }
