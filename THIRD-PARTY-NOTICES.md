@@ -16,3 +16,7 @@ Minecraft、Microsoft、Mojang、Modrinth、CurseForge、MC 百科和用户配�
 LGPL-3.0 和 GPL-3.0 许可证随启动器嵌入并在准备组件时写入组件目录；文本副本见 [LGPL-3.0](docs/licenses/EasyTier-LGPL-3.0.txt) 和 [GPL-3.0](docs/licenses/EasyTier-GPL-3.0.txt)。Wintun 原始文件随官方组件提供，不另行修改。
 
 默认免费节点来源为 https://github.com/Tangent-90C/easytier-public-peers ，不是 Astral 自营服务器，不保证可用性或中转带宽。
+
+## Minecraft 原版纹理
+
+方块配色、盔甲纹饰与物品图标采用 Minecraft Java 1.21.1 原版纹理，版权归 Mojang AB / Microsoft，通过 mcasset.cloud 资产档案取得；这些资源不适用启动器源码许可。Astral Launcher 与 Mojang / Microsoft 无隶属关系。

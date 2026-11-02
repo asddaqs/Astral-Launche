@@ -1,7 +1,7 @@
 {
-  "version": "1.4.2",
-  "url": "https://github.com/asddaqs/Astral-Launche/releases/download/v1.4.2/AstralLauncher.exe",
-  "sha256": "d6289270f7e1a0d6a86fca33b96e46696bb4a1e1b2e2b1055f4bb807163695e0",
-  "size": 8475136,
-  "releaseNotes": "新增 EasyTier 六位房间号联机、免费社区节点与自定义节点；模组批量更新、服务器收藏、截图相册和磁盘管理；圆形/方块地球切换及 Windows 原生平滑圆角。"
+  "version": "1.4.0",
+  "url": "https://github.com/asddaqs/Astral-Launche/releases/download/1.4.0/AstralLauncher.exe",
+  "sha256": "37097daab48e2274151bfd555e83a48a45925458c19e6d8c82a713b5f628c13c",
+  "size": 8731648,
+  "releaseNotes": "像素画新增17色陶瓦，全部材料扩展为49色；实例管理改用24种原版物品图标，可点击图标或通过实例设置更换。"
 }
