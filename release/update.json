@@ -1,7 +1,7 @@
 {
-  "version": "1.4.0",
-  "url": "https://github.com/asddaqs/Astral-Launche/releases/download/1.4.0/AstralLauncher.exe",
-  "sha256": "37097daab48e2274151bfd555e83a48a45925458c19e6d8c82a713b5f628c13c",
-  "size": 8731648,
-  "releaseNotes": "像素画新增17色陶瓦，全部材料扩展为49色；实例管理改用24种原版物品图标，可点击图标或通过实例设置更换。"
+  "version": "1.4.1",
+  "url": "https://github.com/asddaqs/Astral-Launche/releases/download/1.4.1/AstralLauncher.exe",
+  "sha256": "2b7befdc29b501e84ff6864948441ad5c1aa7d13f8c925394cd548a1c7e098de",
+  "size": 8733696,
+  "releaseNotes": "优化实例页面卡片复用与资源释放，减少启动资源重复写入；优化3D皮肤与盔甲预览，缓存合成纹理、批量读取像素并减少无效重绘。"
 }
