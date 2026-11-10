@@ -20,3 +20,7 @@ LGPL-3.0 和 GPL-3.0 许可证随启动器嵌入并在准备组件时写入组�
 ## Minecraft 原版纹理
 
 方块配色、盔甲纹饰与物品图标采用 Minecraft Java 1.21.1 原版纹理，版权归 Mojang AB / Microsoft，通过 mcasset.cloud 资产档案取得；这些资源不适用启动器源码许可。Astral Launcher 与 Mojang / Microsoft 无隶属关系。
+
+## EasyTier Windows 依赖
+
+1.5.0 起同时提取 EasyTier v2.6.4 官方归档中的 Packet.dll，按固定 SHA256 校验，作为上游组件的独立运行依赖。该文件签名发布者为 Nmap Software LLC，保持上游文件原样。

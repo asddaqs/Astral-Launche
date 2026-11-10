@@ -1,7 +1,7 @@
 {
-  "version": "1.4.1",
-  "url": "https://github.com/asddaqs/Astral-Launche/releases/download/1.4.1/AstralLauncher.exe",
-  "sha256": "2b7befdc29b501e84ff6864948441ad5c1aa7d13f8c925394cd548a1c7e098de",
-  "size": 8733696,
-  "releaseNotes": "优化实例页面卡片复用与资源释放，减少启动资源重复写入；优化3D皮肤与盔甲预览，缓存合成纹理、批量读取像素并减少无效重绘。"
+  "version": "1.5.0",
+  "url": "https://github.com/asddaqs/Astral-Launche/releases/download/1.5.0/AstralLauncher.exe",
+  "sha256": "2939a0a2059d8adca61f871b1a51c6bebb44fb004e54d33cf248d9cb93d511da",
+  "size": 8835584,
+  "releaseNotes": "新增模组管理、实例变更记录、联机环境同步、资源包与光影管理、启动性能报告，优化皮肤与配方预览缓存，修复 EasyTier 组件依赖。"
 }
